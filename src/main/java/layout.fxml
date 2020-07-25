@@ -1,8 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.Controller">
+   <children>
+      <DialogPane fx:id="flash" layoutX="16.0" layoutY="75.0" prefHeight="181.0" prefWidth="568.0" style="-fx-background-color: yellow;" visible="false" />
+      <Button fx:id="spin" layoutX="60.0" layoutY="289.0" mnemonicParsing="false" onAction="#spinSlots" text="Spin" />
+      <ImageView fx:id="image1" fitHeight="142.0" fitWidth="125.0" layoutX="37.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hellofx/diamond.png" />
+         </image></ImageView>
+      <ImageView fx:id="image2" fitHeight="142.0" fitWidth="125.0" layoutX="169.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hellofx/spade.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image3" fitHeight="142.0" fitWidth="125.0" layoutX="306.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hellofx/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image4" fitHeight="142.0" fitWidth="125.0" layoutX="439.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hellofx/club.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="currWinText" layoutX="439.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00" textAlignment="RIGHT" wrappingWidth="90.21875" />
+      <Button fx:id="add5Button" layoutX="162.0" layoutY="268.0" mnemonicParsing="false" onAction="#add5" prefHeight="27.0" prefWidth="70.0" text="add $5" />
+      <Button fx:id="add10Button" layoutX="162.0" layoutY="302.0" mnemonicParsing="false" onAction="#add10" text="add $10" />
+      <Button fx:id="add25Button" layoutX="162.0" layoutY="338.0" mnemonicParsing="false" onAction="#add25" text="add $25" />
+      <Text fx:id="netWinText" layoutX="440.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00" textAlignment="RIGHT" wrappingWidth="90.21875560283661" />
+      <Text layoutX="315.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Winnings" />
+      <Text layoutX="338.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Winnings" />
+   </children>
 </AnchorPane>
-
