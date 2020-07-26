@@ -7,27 +7,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="slot_machine.Controller">
    <children>
       <DialogPane fx:id="flash" layoutX="16.0" layoutY="75.0" prefHeight="181.0" prefWidth="568.0" style="-fx-background-color: yellow;" visible="false" />
       <Button fx:id="spin" layoutX="60.0" layoutY="289.0" mnemonicParsing="false" onAction="#spinSlots" text="Spin" />
       <ImageView fx:id="image1" fitHeight="142.0" fitWidth="125.0" layoutX="37.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@hellofx/diamond.png" />
+            <Image url="@slot_machine/diamond.png" />
          </image></ImageView>
       <ImageView fx:id="image2" fitHeight="142.0" fitWidth="125.0" layoutX="169.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@hellofx/spade.png" />
+            <Image url="@slot_machine/spade.png" />
          </image>
       </ImageView>
       <ImageView fx:id="image3" fitHeight="142.0" fitWidth="125.0" layoutX="306.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@hellofx/heart.png" />
+            <Image url="@slot_machine/heart.png" />
          </image>
       </ImageView>
       <ImageView fx:id="image4" fitHeight="142.0" fitWidth="125.0" layoutX="439.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@hellofx/club.png" />
+            <Image url="@slot_machine/club.png" />
          </image>
       </ImageView>
       <Text fx:id="currWinText" layoutX="439.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00" textAlignment="RIGHT" wrappingWidth="90.21875" />

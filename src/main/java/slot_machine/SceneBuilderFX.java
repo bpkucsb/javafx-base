@@ -1,4 +1,4 @@
-package hellofx;
+package slot_machine;
 
 import java.io.IOException;
 
