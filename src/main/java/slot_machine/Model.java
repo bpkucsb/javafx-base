@@ -22,6 +22,7 @@ public class Model {
 	private int index2;      // position of slot 2
 	private int index3;      // position of slot 3
 	private int index4;      // position of slot 4
+	private final int HOUSE_ODDS = 5;    // odds in favor of the house
 	
 	/**
 	 * Default constructor, set winnings to zero
@@ -115,7 +116,7 @@ public class Model {
 	
 		// computer amount won
 		if (isWin) {
-			win = 5*(4*4*4-1);
+			win = 5*((4*4*4-1) - HOUSE_ODDS);
 		} else {
 			win = -5;
 		}
